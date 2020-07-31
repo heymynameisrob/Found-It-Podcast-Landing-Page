@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ renderData.title or title or metadata.title }}</title>
+<meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png">
+<link rel="manifest" href="/static/img/site.webmanifest">
+<link rel="mask-icon" href="/static/img/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/static/img/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/static/img/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">    
+<meta property="og:title" content="{{ metadata.title }}">
+<meta property="og:site_name" content="Found It! Podcast">
+<meta property="og:url" content="">
+<meta property="og:description" content="{{ metadata.description }}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="">
+<link rel="stylesheet" href="{{ '/static/style.css' | url }}">
+<link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+    "palette": {
+        "popup": {
+        "background": "#3b5bdb"
+        },
+        "button": {
+        "background": "#1d1d1d",
+                    "text": "#fff"
+        }
+    },
+    "theme": "classic",
+    "position": "bottom-left",
+    "content": {
+        "href": "/privacy-policy"
+    }
+    })});
+</script>

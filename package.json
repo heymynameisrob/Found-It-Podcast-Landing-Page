@@ -1,0 +1,48 @@
+{
+  "name": "Found-It-Podcast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "env NODE_ENV=production postcss ./src/css/style.css -o ./static/style.css",
+    "build:js": "babel ./src/js/main.js -o ./static/main.js --presets minify",
+    "build:images": "imagemin ./src/img/* -o ./static/img",
+    "build:11ty": "eleventy",
+    "build": "run-s build:css build:js build:images build:11ty",
+    "start:css": "postcss ./src/css/style.css -o ./static/style.css --watch",
+    "start:js": "npx babel ./src/js/main.js -o ./static/main.js --source-maps --watch",
+    "start:11ty": "eleventy --serve",
+    "start": "yarn build:images && run-p start:css start:js start:11ty",
+    "debug": "DEBUG=* eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/register": "^7.9.0",
+    "autoprefixer": "^9.7.6",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.5.1",
+    "cssnano": "^4.1.10",
+    "imagemin-cli": "^5.1.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.0.23",
+    "postcss-import": "^12.0.1",
+    "precss": "^4.0.0"
+  },
+  "dependencies": {
+    "luxon": "^1.23.0",
+    "markdown-it": "^10.0.0",
+    "markdown-it-anchor": "^5.2.7"
+  }
+}

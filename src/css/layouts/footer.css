@@ -1,0 +1,11 @@
+
+footer {
+  display:block;
+  padding:var(--p-5) 0;
+  background-color:var(--color-bg);
+  text-align:center;
+}
+footer a {
+  font-size:75%;
+  color:var(--color-text-low);
+}

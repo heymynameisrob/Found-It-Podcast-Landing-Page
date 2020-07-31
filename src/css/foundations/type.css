@@ -1,0 +1,85 @@
+
+@font-face {
+  
+  font-family:"Gilroy";
+  src:url("/static/fonts/Gilroy-Regular.woff2") format("woff2"),url("/static/fonts/Gilroy-Regular.woff") format("woff"),url("/static/fonts/Gilroy-Regular.otf") format("opentype");
+  font-style:normal;font-weight:400;font-display: swap;
+}
+
+@font-face {
+  font-family:"Gilroy";
+  src:url("/static/fonts/Gilroy-Bold.woff2") format("woff2"),url("/static/fonts/Gilroy-Bold.woff") format("woff"),url("/static/fonts/Gilroy-Bold.otf") format("opentype");
+  font-style:normal;font-weight:700;font-display: swap;
+}
+      
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight:700;
+  line-height:1.2;
+  color:var(--color-text-high);
+  margin:0 0 0.5em 0;
+}
+.t-no-margin {
+  margin:0;
+}
+
+h1,
+.t-xl { 
+  font-size: var(--type-xl); 
+  letter-spacing: -0.02em; 
+}
+h2,
+.t-lg { 
+  font-size: var(--type-lg); 
+  letter-spacing: -0.01em; 
+}
+h3,
+.t-md { 
+  font-size: var(--type-md); 
+  letter-spacing:0; 
+}
+h4,
+.t-base { 
+  font-size: var(--type-base); 
+  letter-spacing:0.01em; 
+}
+h5 {
+  font-size:var(--type-sm);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color:var(--color-text-low);
+  font-weight:bold;
+  margin:0 0 var(--p-2) 0;
+}
+
+p {
+  margin:0;
+  font-size:var(--type-base);
+  line-height: 1.5;
+  color:var(--color-text-med);    
+}
+
+h1 + p {  
+  font-size:var(--type-md);
+}
+
+a {
+  display:inline-block;
+  color:var(--color-primary);
+  font-weight:700;
+  font-size:var(--type-base);
+}
+
+p + p,
+p + a,
+p + h3 {
+  margin-top:var(--p-base);
+}
+
+small {
+  font-size:75%;
+  color:var(--color-text-low);
+}

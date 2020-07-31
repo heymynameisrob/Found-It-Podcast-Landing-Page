@@ -1,0 +1,157 @@
+.screenshot picture {
+  position: relative;
+  display:block;
+  margin:0 auto;
+}
+.screenshot picture img {
+  margin:0 auto;
+}
+.upcoming {
+  text-align:center;
+}
+.upcoming ul {
+  display:block;
+  margin:var(--p-3) 0;
+}
+
+@media(min-width:48rem) {
+  .upcoming ul {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:1.5rem;
+    overflow-x:none;
+  }
+}
+.upcoming ul li {
+  margin-bottom:1.5rem;
+}
+.upcoming ul li article {
+  position: relative;
+  object-fit: contain;
+  padding-top:60%;
+  overflow:hidden;
+  border-radius: 4px;
+}
+.upcoming ul li article img {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.upcoming ul li article .topic-overlay {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.80) 100%);  
+  z-index: 1;
+  padding:1rem;
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  text-align: left;
+}
+.upcoming ul li article .topic-overlay p,
+.upcoming ul li article .topic-overlay time {
+  color:#fff;
+  margin:0;
+}
+.upcoming ul li article .topic-overlay time {
+  opacity:0.7;
+  font-size:0.85rem;
+  margin-top:0.5rem;
+}
+
+.features,
+.cta,
+.benefits {
+  background-color:var(--color-bg);
+  text-align:center;
+}
+.features .title-wrap {
+  display:inline-block;
+  padding:var(--p-base);
+  border-radius:var(--p-7);
+  background-color:var(--color-bg);
+  box-shadow:0 4px 1rem rgba(0,0,0,0.08);
+  margin:0 auto;
+  transform:rotate(-1deg) translateY(-50%);
+}
+
+.features-grid {
+  display:block;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:1.5rem;
+  
+}
+@media(min-width:48rem) {
+  .features-grid {
+    display:grid;
+  }
+}
+
+.features-grid article {
+  display:block;
+  margin-bottom:var(--p-4);
+  text-align:center;
+}
+.features-grid article h4 {
+  max-width:20ch;
+  margin-left:auto;
+  margin-right:auto;
+}
+.features-grid article img {  
+  margin:0 auto;
+  max-width:4rem;
+  margin-bottom:var(--p-3);
+}
+
+.cta h3 {
+  line-height: 1.5;
+}
+
+.image-text-block {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow:wrap;
+}
+.image-text-block article {
+  max-width:48ch;    
+  text-align:left;
+}
+@media(min-width:48rem) {
+  .image-text-block {
+    flex-flow:row nowrap;
+  }
+  .about-nuom .image-text-block article {
+    order:-1;
+    padding-right:var(--p-base);
+  }
+  
+}
+.image-text-block picture {
+  margin-bottom:var(--p-5);
+}
+
+.image-text-block picture img {
+  margin:0 auto;
+  box-shadow:0 0 100px rgba(0,0,0,0.08);
+  border-radius:1rem;
+
+}
+.image-text-block ul {
+  margin:1rem 0;
+  padding-left:1rem;
+}
+.image-text-block ul li {  
+  padding:.5rem 0;
+}
+.image-text-block ul li:before {
+  position: relative;
+  content: '✓';
+  left:-1rem;
+}

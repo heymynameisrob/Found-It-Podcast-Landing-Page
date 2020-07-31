@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include 'head.njk' %}
+  </head>
+  <body>     
+    <nav role="navigation">
+      <div class="l-container">
+        <div class="nav-inner">
+          <a href="/">LOGO</a>
+          <ul class="nav-links">
+            <li><a href="#">Hosts</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>      
+    </nav>
+    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+      {{ content | safe }}
+    </main>
+    <footer>
+      <div class="l-container">
+        <small>&copy; 2020. Built by nuom </small>
+        <a href="/privacy-policy">Privacy Policy</a>
+      </div>
+    </footer>    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="{{ '/static/main.js' | url }}"></script>   
+    <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/"; 
+          });
+        }
+      });
+    }
+  </script>
+  </body>
+</html>

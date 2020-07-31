@@ -1,0 +1,43 @@
+:root {
+  --color-text-high:rgba(255,255,255,1);
+  --color-text-med:rgba(255,255,255,0.8);
+  --color-text-low:rgba(255,255,255,0.6);
+
+  --color-primary:#FEDE00;
+  
+  --color-muted: #222;
+  --color-grey:#444;
+  --color-bg: #111;
+
+  --font-stack-headline:'Gilroy', -system-ui, sans-serif;
+  --font-stack-body:var(--font-stack-headline);
+
+  --type-xs:0.75rem;
+  --type-sm:0.875rem;
+  --type-base:1rem; 
+  --type-md:1.125rem;
+  --type-lg:1.25rem; 
+  --type-xl:1.75rem;
+
+  --p-base:1rem;
+  --p-1:0.5rem;
+  --p-2:1rem;
+  --p-3:1.5rem;
+  --p-4:2rem;
+  --p-5:3rem;
+  --p-6:3.5rem;
+  --p-7:5rem;
+  
+}
+
+@media(min-width:80rem) {
+  :root {
+    --type-base:1.125rem;
+    --type-md:1.5rem;
+    --type-lg:2rem; 
+    --type-xl:3rem;
+        
+    --p-6:5rem;
+    --p-7:7rem; 
+  }
+}
