@@ -1,4 +1,5 @@
 ---
+layout: "layouts/page.njk"
 title: "Pilot: Martin and Rob introduce the podcast"
 linkToAnchor: https://google.com
 episodeNo: 0

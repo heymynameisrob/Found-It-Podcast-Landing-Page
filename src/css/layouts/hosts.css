@@ -1,0 +1,45 @@
+.host {
+  display:block;
+  grid-column: span 4;
+  place-items: center;
+}
+@media(min-width:48rem) {
+  .hosts-grid {
+    display:grid;
+  }
+}
+.host img {
+  border-radius:.5rem;
+}
+.host h3 {
+  margin-top:var(--p-3);
+}
+.host > span {
+  display:block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight:700;
+  color:var(--color-text-low);
+}
+.host p {
+  margin-top:var(--p-3);
+}
+
+.host ul {
+  margin-top:var(--p-3);
+}
+.host ul,
+.host ul li a {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color:var(--color-primary);
+}
+.host ul li {
+  padding-right:var(--p-2);
+}
+
+.host ul li a span {
+  padding-left:.5rem;
+}

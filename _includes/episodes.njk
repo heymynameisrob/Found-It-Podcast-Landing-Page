@@ -3,12 +3,14 @@
     <div class="episode-card">    
       <article>
           <h5>Episode #{{episode.data.episodeNo}}</h5>
-          <h3>{{ episode.data.title }}</h3>
+          <a href="{{episode.url}}"><h3>{{ episode.data.title }}</h3></a>
           {% excerpt episode %}
           <a href="{{episode.data.linkToAnchor}}">Listen to episode</a>
       </article>   
       <aside>
-        <img src="{{episode.data.featuredImg}}" alt="{{episode.title}}" loading="lazy" />
+        <a href="{{episode.url}}">
+          <img src="{{episode.data.featuredImg}}" alt="{{episode.title}}" loading="lazy" />
+        </a>
       </aside>
     </div>
   {% endfor %}

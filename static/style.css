@@ -295,8 +295,7 @@ header[role="banner"] img {
 }
 footer {
   display:block;
-  padding:var(--p-5) 0;
-  background-color:var(--color-bg);
+  padding:var(--p-5) 0;  
   text-align:center;
 }
 footer a {
@@ -350,6 +349,13 @@ footer a {
     display:flex;
   }
 }
+.episode-card a {
+  display:inline-block;
+  text-decoration: none;
+}
+.episode-card a:hover {
+  opacity:0.7;
+}
 .episode-card article {  
   max-width:48ch;
   padding-right:1.5rem;
@@ -365,3 +371,48 @@ footer a {
   border-radius: 0.5rem;    
 }
 /* Homepage */
+.host {
+  display:block;
+  grid-column: span 4;
+  align-items: center;
+  justify-items: center;
+  place-items: center;
+}
+@media(min-width:48rem) {
+  .hosts-grid {
+    display:grid;
+  }
+}
+.host img {
+  border-radius:.5rem;
+}
+.host h3 {
+  margin-top:var(--p-3);
+}
+.host > span {
+  display:block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight:700;
+  color:var(--color-text-low);
+}
+.host p {
+  margin-top:var(--p-3);
+}
+.host ul {
+  margin-top:var(--p-3);
+}
+.host ul,
+.host ul li a {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color:var(--color-primary);
+}
+.host ul li {
+  padding-right:var(--p-2);
+}
+.host ul li a span {
+  padding-left:.5rem;
+}

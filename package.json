@@ -12,7 +12,7 @@
     "start:css": "postcss ./src/css/style.css -o ./static/style.css --watch",
     "start:js": "npx babel ./src/js/main.js -o ./static/main.js --source-maps --watch",
     "start:11ty": "eleventy --serve",
-    "start": "yarn build:images && run-p start:css start:js start:11ty",
+    "start": "run-p start:css start:js start:11ty",
     "debug": "DEBUG=* eleventy"
   },
   "keywords": [],

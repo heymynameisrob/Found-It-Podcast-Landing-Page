@@ -1,8 +1,7 @@
 
 footer {
   display:block;
-  padding:var(--p-5) 0;
-  background-color:var(--color-bg);
+  padding:var(--p-5) 0;  
   text-align:center;
 }
 footer a {

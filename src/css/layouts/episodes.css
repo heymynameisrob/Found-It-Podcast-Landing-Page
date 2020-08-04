@@ -47,6 +47,13 @@
     display:flex;
   }
 }
+.episode-card a {
+  display:inline-block;
+  text-decoration: none;
+}
+.episode-card a:hover {
+  opacity:0.7;
+}
 .episode-card article {  
   max-width:48ch;
   padding-right:1.5rem;
