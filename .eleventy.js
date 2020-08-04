@@ -4,7 +4,6 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const excerpt = require('eleventy-plugin-excerpt');
 
-
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("static/");
   eleventyConfig.addPassthroughCopy("admin/");
