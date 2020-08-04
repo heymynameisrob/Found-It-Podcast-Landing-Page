@@ -1,12 +1,12 @@
 {
-    "title": "Work better in products teams with Sherpa | Free weekly guide sent every Tuesday",
-    "url": "https://sherpatoolbox.com",
-    "description": "A free weekly newsletter helping you work more effectively, get your ideas out the door faster and secure your footing on new projects.",
+    "title": "Found It! – Startup Stories from Independent Entrepreneurs",
+    "url": "https://founditpodcast.com",
+    "description": "Found It! is a podcast all about founders and leaders of small, independent startups. We tell their against-all-odds tales, giving a voice to the thousands of visionaries build great products.",
     "feed": {
-      "subtitle": "A free weekly newsletter helping you work more effectively, get your ideas out the door faster and secure your footing on new projects.",
+      "subtitle": "Found It! is a podcast all about founders and leaders of small, independent startups. We tell their against-all-odds tales, giving a voice to the thousands of visionaries build great products.",
       "filename": "feed.xml",
       "path": "/feed/feed.xml",
-      "id": "https://sherpatoolbox.com"
+      "id": "https://founditpodcast.com"
     },
     "author": {
       "name": "nuom",
