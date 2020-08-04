@@ -1,0 +1,15 @@
+<div class="episode-list">
+  {% for episode in episodeList | reverse %}
+    <div class="episode-card">    
+      <article>
+          <h5>Episode #{{episode.data.episodeNo}}</h5>
+          <h3>{{ episode.data.title }}</h3>
+          {% excerpt episode %}
+          <a href="{{episode.data.linkToAnchor}}">Listen to episode</a>
+      </article>   
+      <aside>
+        <img src="{{episode.data.featuredImg}}" alt="{{episode.title}}" loading="lazy" />
+      </aside>
+    </div>
+  {% endfor %}
+</div>

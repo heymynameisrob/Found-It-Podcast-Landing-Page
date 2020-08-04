@@ -9,8 +9,8 @@
   --color-grey:#444;
   --color-bg: #111;
 
-  --font-stack-headline:'Gilroy', -system-ui, sans-serif;
-  --font-stack-body:var(--font-stack-headline);
+  --font-stack-headline:'Syne','Inter', -system-ui, sans-serif;
+  --font-stack-body:'Inter', -system-ui, sans-serif;;
 
   --type-xs:0.75rem;
   --type-sm:0.875rem;

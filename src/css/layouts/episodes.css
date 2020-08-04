@@ -1,0 +1,63 @@
+.listen-live {
+  text-align:center;
+}
+.listen-live iframe {
+  margin:var(--p-2) auto;
+  margin-bottom:var(--p-4);
+}
+
+.listen-live--badges {
+  display:block;
+  justify-content: center;
+  align-items: center;
+  flex-flow:wrap;
+  padding:var(--p-2) 0;
+}
+@media(min-width:48rem) {
+  .listen-live--badges {
+    display:flex;
+  }
+}
+.listen-live--badges a {
+  display:block;
+  margin-bottom:var(--p-2);
+  margin-right:var(--p-2);
+}
+.listen-live--badges a:last-of-type {
+  margin-right: 0;
+}
+
+.episode-list {
+  grid-column: 3 / 11;
+
+}
+.episode-card {
+  display:block;
+  justify-content: space-between;
+  align-items: center;  
+  flex-flow:row nowrap;
+  padding:var(--p-3);
+  margin-bottom:var(--p-3);
+  border-radius:0.5rem;
+  background-color:var(--color-muted);
+  box-shadow:0 4px 1rem rgba(0,0,0,0.25);
+}
+@media(min-width:48rem) {
+  .episode-card {
+    display:flex;
+  }
+}
+.episode-card article {  
+  max-width:48ch;
+  padding-right:1.5rem;
+}
+.episode-card article p {
+  font-size:1rem;
+}
+.episode-card aside {
+  flex:1;
+}
+.episode-card img {  
+  flex:1;  
+  border-radius: 0.5rem;    
+}

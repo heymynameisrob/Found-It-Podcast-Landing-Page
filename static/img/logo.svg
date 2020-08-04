@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="127px" height="130px" viewBox="0 0 127 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Logo</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-383.000000, 0.000000)">
+            <g id="Logo" transform="translate(383.000000, 0.000000)">
+                <path d="M0,0 L127,0 L127,130 L64,97 L0,130 L0,0 Z" id="Rectangle-2" fill="#FCD727"></path>
+                <path d="M44.224,70 L44.224,60.64 L73.984,60.64 L73.984,52.48 L44.224,52.48 L44.224,48.4 L80.608,48.4 L80.608,39.28 L32.224,39.28 L32.224,70 L44.224,70 Z M97.504,60.208 L97.504,38.8 L85.504,38.8 L85.504,60.208 L97.504,60.208 Z M97.6,69.9952004 L97.6,62.7596802 L85.408,62.7596802 L85.408,69.9952004 L97.6,69.9952004 Z" id="F!" fill="#262626" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

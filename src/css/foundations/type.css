@@ -1,15 +1,8 @@
 
 @font-face {
-  
-  font-family:"Gilroy";
-  src:url("/static/fonts/Gilroy-Regular.woff2") format("woff2"),url("/static/fonts/Gilroy-Regular.woff") format("woff"),url("/static/fonts/Gilroy-Regular.otf") format("opentype");
-  font-style:normal;font-weight:400;font-display: swap;
-}
-
-@font-face {
-  font-family:"Gilroy";
-  src:url("/static/fonts/Gilroy-Bold.woff2") format("woff2"),url("/static/fonts/Gilroy-Bold.woff") format("woff"),url("/static/fonts/Gilroy-Bold.otf") format("opentype");
-  font-style:normal;font-weight:700;font-display: swap;
+  font-family:"Syne";
+  src:url("/static/fonts/Syne-Bold.woff2") format("woff2"),url("/static/fonts/Syne-Bold.woff") format("woff"),url("/static/fonts/Syne-Bold.otf") format("opentype");
+  font-style:normal;font-display: swap;
 }
       
 
@@ -19,6 +12,7 @@ h3,
 h4 {
   font-weight:700;
   line-height:1.2;
+  font-family:var(--font-stack-headline);
   color:var(--color-text-high);
   margin:0 0 0.5em 0;
 }

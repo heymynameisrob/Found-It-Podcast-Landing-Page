@@ -10,8 +10,8 @@
   --color-grey:#444;
   --color-bg: #111;
 
-  --font-stack-headline:'Gilroy', -system-ui, sans-serif;
-  --font-stack-body:var(--font-stack-headline);
+  --font-stack-headline:'Syne','Inter', -system-ui, sans-serif;
+  --font-stack-body:'Inter', -system-ui, sans-serif;;
 
   --type-xs:0.75rem;
   --type-sm:0.875rem;
@@ -90,7 +90,8 @@ body {
   background-color:var(--color-bg);
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
+	background-image:url('/static/img/Backer.svg');
+	background-size:cover;
 }
 ol, ul {
 	list-style: none;
@@ -113,15 +114,9 @@ img {
 	height:auto;
 }
 @font-face {
-  
-  font-family:"Gilroy";
-  src:url("/static/fonts/Gilroy-Regular.woff2") format("woff2"),url("/static/fonts/Gilroy-Regular.woff") format("woff"),url("/static/fonts/Gilroy-Regular.otf") format("opentype");
-  font-style:normal;font-weight:400;font-display: swap;
-}
-@font-face {
-  font-family:"Gilroy";
-  src:url("/static/fonts/Gilroy-Bold.woff2") format("woff2"),url("/static/fonts/Gilroy-Bold.woff") format("woff"),url("/static/fonts/Gilroy-Bold.otf") format("opentype");
-  font-style:normal;font-weight:700;font-display: swap;
+  font-family:"Syne";
+  src:url("/static/fonts/Syne-Bold.woff2") format("woff2"),url("/static/fonts/Syne-Bold.woff") format("woff"),url("/static/fonts/Syne-Bold.otf") format("opentype");
+  font-style:normal;font-display: swap;
 }
 h1,
 h2,
@@ -129,6 +124,7 @@ h3,
 h4 {
   font-weight:700;
   line-height:1.2;
+  font-family:var(--font-stack-headline);
   color:var(--color-text-high);
   margin:0 0 0.5em 0;
 }
@@ -230,10 +226,11 @@ section {
     padding-top:var(--p-7);
   }
 }
-nav {
+nav {  
   background-color:var(--color-muted);
 }
 .nav-inner {
+  position: relative;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -242,7 +239,7 @@ nav {
 }
 @media(min-width:48rem) {
   .nav-inner {
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-flow:wrap;
   }
 }
@@ -264,6 +261,15 @@ nav {
   font-weight:normal;
   color:var(--color-text-med);
 }
+nav .logo {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:-1.5rem;
+}
+nav .logo svg {
+  height:100%;
+}
 header[role="banner"] {
   text-align:center;
   padding:var(--p-6) 0;
@@ -271,7 +277,7 @@ header[role="banner"] {
 @media(min-width:48rem) {
   header[role="banner"] {
     text-align:center;
-    padding:var(--p-6) 0 var(--p-6) 0 ;
+    padding:var(--p-7) 0 var(--p-5) 0 ;
   }
 }
 header[role="banner"] h1 {  
@@ -296,5 +302,66 @@ footer {
 footer a {
   font-size:75%;
   color:var(--color-text-low);
+}
+.listen-live {
+  text-align:center;
+}
+.listen-live iframe {
+  margin:var(--p-2) auto;
+  margin-bottom:var(--p-4);
+}
+.listen-live--badges {
+  display:block;
+  justify-content: center;
+  align-items: center;
+  flex-flow:wrap;
+  padding:var(--p-2) 0;
+}
+@media(min-width:48rem) {
+  .listen-live--badges {
+    display:flex;
+  }
+}
+.listen-live--badges a {
+  display:block;
+  margin-bottom:var(--p-2);
+  margin-right:var(--p-2);
+}
+.listen-live--badges a:last-of-type {
+  margin-right: 0;
+}
+.episode-list {
+  grid-column: 3 / 11;
+
+}
+.episode-card {
+  display:block;
+  justify-content: space-between;
+  align-items: center;  
+  flex-flow:row nowrap;
+  padding:var(--p-3);
+  margin-bottom:var(--p-3);
+  border-radius:0.5rem;
+  background-color:var(--color-muted);
+  box-shadow:0 4px 1rem rgba(0,0,0,0.25);
+}
+@media(min-width:48rem) {
+  .episode-card {
+    display:flex;
+  }
+}
+.episode-card article {  
+  max-width:48ch;
+  padding-right:1.5rem;
+}
+.episode-card article p {
+  font-size:1rem;
+}
+.episode-card aside {
+  flex:1;
+}
+.episode-card img {  
+  flex:1;  
+  border-radius: 0.5rem;    
 }
 /* Homepage */

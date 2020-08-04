@@ -8,3 +8,20 @@ templateClass: home
     <p>Found It! is a podcast all about founders and leaders of small, independent startups. We tell their against-all-odds tales, giving a voice to the thousands of visionaries build great products.</p>
   </div>
 </header>
+<section class="listen-live">
+  <div class="l-container">
+    <h3>Join the conversation</h3>
+    <iframe src="https://anchor.fm/found-it-podcast/embed" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+    <p>or listen on your favourite streaming service</p>
+    <div class="listen-live--badges">
+      <a href="#">{% include "spotify-badge.svg" %}</a>
+      <a href="#">{% include "apple-badge.svg" %}</a>
+    </div>    
+  </div>
+</section>
+<section>
+  <div class="l-container">
+  {% set episodeList = collections.episodes %}
+  {% include "_includes/episodes.njk" %}  
+  </div>
+</section>

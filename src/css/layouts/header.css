@@ -1,7 +1,8 @@
-nav {
+nav {  
   background-color:var(--color-muted);
 }
 .nav-inner {
+  position: relative;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +11,7 @@ nav {
 }
 @media(min-width:48rem) {
   .nav-inner {
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-flow:wrap;
   }
 }
@@ -32,6 +33,15 @@ nav {
   font-weight:normal;
   color:var(--color-text-med);
 }
+nav .logo {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom:-1.5rem;
+}
+nav .logo svg {
+  height:100%;
+}
 
 header[role="banner"] {
   text-align:center;
@@ -40,7 +50,7 @@ header[role="banner"] {
 @media(min-width:48rem) {
   header[role="banner"] {
     text-align:center;
-    padding:var(--p-6) 0 var(--p-6) 0 ;
+    padding:var(--p-7) 0 var(--p-5) 0 ;
   }
 }
 header[role="banner"] h1 {  

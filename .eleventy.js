@@ -2,6 +2,8 @@ const { DateTime } = require("luxon");
 const fs = require("fs");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const excerpt = require('eleventy-plugin-excerpt');
+
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("static/");
@@ -18,6 +20,10 @@ module.exports = function (eleventyConfig) {
     linkify: true
   })
   eleventyConfig.setLibrary("md", markdownLibrary);
+
+  eleventyConfig.addPlugin(excerpt, {
+    excerptSeparator: '<!--more-->'
+  });
 
 
   return {
