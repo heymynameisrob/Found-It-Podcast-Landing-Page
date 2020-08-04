@@ -7,6 +7,7 @@ const excerpt = require('eleventy-plugin-excerpt');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("static/");
+  eleventyConfig.addPassthroughCopy("admin/");
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("LLL yyyy");
