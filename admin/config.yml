@@ -1,12 +1,21 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
-media_folder: "static/uploads" collections: 
+
+media_folder: "src/img/" 
+public_folder: "static/img" 
+
+collections: 
   - name: "episodes"
     label: "Episodes"
+    format: "markdown"
+    extension: "md"
     folder: "/episodes"
+    delete: true
+    editor:
+      preview: false
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{month}}-{{day}}-{{name}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true}
       - { label: "Featured Image", name: "featuredImg", widget: "image" }
