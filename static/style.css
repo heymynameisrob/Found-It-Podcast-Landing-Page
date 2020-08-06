@@ -231,28 +231,17 @@ nav {
 }
 .nav-inner {
   position: relative;
-  display:flex;
-  justify-content: center;
+  display:flex;  
   align-items: center;
-  flex-flow: column nowrap;    
+  justify-content: flex-end;
+  flex-flow:wrap; 
   padding:var(--p-3) 0;    
 }
-@media(min-width:48rem) {
-  .nav-inner {
-    justify-content: flex-end;
-    flex-flow:wrap;
-  }
-}
 .nav-links {
-  display:none;
+  display:flex;
   justify-content: flex-end;
   align-items: center;
   flex-flow:row nowrap;
-}
-@media(min-width:48rem) {
-  .nav-links {
-    display:flex;
-  }
 }
 .nav-links li {
   padding-left:var(--p-3);
@@ -394,6 +383,7 @@ footer a {
   align-items: center;
   justify-items: center;
   place-items: center;
+  margin-bottom:var(--p-3);
 }
 @media(min-width:48rem) {
   .hosts-grid {

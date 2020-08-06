@@ -2,6 +2,7 @@
   display:block;
   grid-column: span 4;
   place-items: center;
+  margin-bottom:var(--p-3);
 }
 @media(min-width:48rem) {
   .hosts-grid {
