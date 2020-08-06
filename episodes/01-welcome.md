@@ -3,7 +3,7 @@ layout: "layouts/page.njk"
 title: "Pilot: Martin and Rob introduce the podcast"
 linkToAnchor: https://google.com
 episodeNo: 0
-featuredImg: /static/img/episode-0.png
+featuredImg: https://media.giphy.com/media/10KTdhr5Zzq6uA/giphy.gif
 ---
 Welcome to the first ever episode! The genesis. The beginning. The OG. Grandmaster Flash. Batman Begins. Rob and Martin get together in-front of a couple of microphones for the first time to actual put this idea into action.
 
