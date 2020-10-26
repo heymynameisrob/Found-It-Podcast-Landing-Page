@@ -1,6 +1,6 @@
 ---
 layout: "layouts/page.njk"
-title: "002: Will Mellors-Blair, Fitpack"
+title: "002: Building a revolutionary employee health system with Will Mellors-Blair"
 linkToAnchor: https://anchor.fm/found-it-podcast/episodes/002-Talking-to-Fitpack-founder-and-CEO-Will-Mellors-Blair-about-coming-up-playing-football--having-the-confidence-to-follow-your-vision-and-going-vegan-ekf2lp/a-a3dtnrv
 episodeNo: 2
 featuredImg: /static/img/will@2x.png

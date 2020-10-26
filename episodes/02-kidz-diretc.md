@@ -1,6 +1,6 @@
 ---
 layout: "layouts/page.njk"
-title: "001: Leena and Razlan, Kidz Diretc"
+title: "001: Putting families on the map with Leena and Razlan"
 linkToAnchor: https://anchor.fm/found-it-podcast/episodes/001-Talking-with-Leena-and-Razlan-from-Kidz-Diretc-about-Putting-family-fun-on-the-map-and-pivoting-due-to-COVID-ei4lj0
 episodeNo: 1
 featuredImg: /static/img/kidz.jpg
