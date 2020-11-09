@@ -226,6 +226,9 @@ section {
     padding-top:var(--p-7);
   }
 }
+.page-content {
+  margin-top:var(--p-3);
+}
 nav {  
   background-color:var(--color-muted);
 }

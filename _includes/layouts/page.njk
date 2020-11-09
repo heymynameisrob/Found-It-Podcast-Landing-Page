@@ -4,10 +4,12 @@ templateClass: page
 ---
 <div class="l-container">  
   <div class="l-inner">
-    <section class="section-pt">
-      <p><a href="{{ '/' | url }}">← Back home</a></p>
+    <section class="section-pt">      
       <h1>{{ title }}</h1>
-      {{ content | safe }}
+      <a href="{{linkToAnchor}}">Listen to episode</a>
+      <section class="page-content">
+        {{ content | safe }}
+      </section>
     </section>
   </div>
 </div>
