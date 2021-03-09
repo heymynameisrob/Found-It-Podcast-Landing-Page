@@ -1,5 +1,5 @@
 ---
-title: "007: The business of laughter with Peter Cann - The Laughter Man"
+title: "007: The business of laughter with Pete Cann - The Laughter Man"
 featuredImg: static/img/pete_podcast_image.jpg
 episodeNo: 7
 linkToAnchor: https://anchor.fm/found-it-podcast/episodes/007-The-business-of-laughter-with-Peter-Cann---The-Laughter-Man-es379n
