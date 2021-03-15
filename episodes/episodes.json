@@ -1,3 +1,4 @@
 {
-  "tags": "episodes"
+  "tags": "episodes",
+  "layout": "layouts/page.njk"
 }

@@ -1,4 +1,5 @@
 ---
+layout: "layouts/page.njk"
 title: "007: The business of laughter with Pete Cann - The Laughter Man"
 featuredImg: static/img/pete_podcast_image.jpg
 episodeNo: 7
