@@ -14,6 +14,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true}
+      - { label: "Summary", name: "summary", widget: "string", required: true}
       - { label: "Featured Image", name: "featuredImg", widget: "image" }
       - { label: "Episode No", name: "episodeNo", widget: "number", required: true}
       - { label: "Body", name: "body", widget: "markdown", required: true}

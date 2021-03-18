@@ -3,8 +3,8 @@
     <div class="episode-card">    
       <article>
           <h5>Episode #{{episode.data.episodeNo}}</h5>
-          <a href="{{episode.url}}"><h3>{{ episode.data.title }}</h3></a>
-          {% excerpt episode %}
+          <a href="{{episode.url}}"><h3>{{ episode.data.title }}</h3></a>          
+          <p>{{episode.data.summary}}</p>
           <a href="{{episode.data.linkToAnchor}}">Listen to episode →</a>
       </article>   
       <aside>

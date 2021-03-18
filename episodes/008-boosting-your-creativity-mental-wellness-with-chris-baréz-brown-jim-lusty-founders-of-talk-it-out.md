@@ -1,6 +1,7 @@
 ---
 title: "008: Boosting Your Creativity & Mental Wellness With Chris Baréz-Brown &
   Jim Lusty, Founders of Talk It Out"
+summary: How often have you found yourself in a rut without any explanation for it? Your family's fine, your job's going great and your day's never been better yet you feel somehow off. Turns out 95% of our thinking is subconscious and we don't have control over it. Or do we?
 featuredImg: static/img/chrisxjim.jpg
 episodeNo: 8
 linkToAnchor: https://anchor.fm/found-it-podcast/episodes/008-Boosting-Your-Creativity--Mental-Wellness-With-Chris-Barz-Brown--Jim-Lusty--Founders-of-Talk-It-Out-eskm6s
